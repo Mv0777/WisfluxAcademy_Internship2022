@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<br>
+<head>
+    <style>
+    #div1{
+        width: 30%;
+        float: left;
+    }
+    #div2{
+        width:70%;
+        float: right;
+    }
+</style>
+	<meta charset="utf-8">
+	<title>Technical Documentation Page</title>
+</head>
+
+    
+   
+  <div id="div1">
+   
+    <h3>Technical Documentation</h3>
+    <a href="#a">Introduction</a><br></br>
+    <a href="#b">What you should already know</a><br></br>
+    <a href="#c">About the Topic</a><br></br>
+    <a href="#d">Topic1</a><br></br>
+    <a href="#e">Topic2</a><br></br></p>
+  </div>
+<div id="div2">
+    <h2 id="a"  style="background-color: black; color: white ;"> Introduction </h2>
+ Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+
+    Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+
+<h2 id="b" style="background-color: black; color: white ;" >What you should already know</h2>
+To learn Java, you must have the basic knowledge of C/C++ programming language.
+
+<ul><li>variable in C/C++</li>
+<li>datatypes in C/C++</li>
+<li>operators in C/C++ </li></ul>
+<h2 id="c" style="background-color: black; color: white ;"> About the Topic</h2>
+<h4>Java Variables</h4>
+A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.
+
+Variable is a name of memory location. There are three types of variables in java: local, instance and static.
+
+There are two types of data types in Java: primitive and non-primitive.
+<h2 id="d" style="background-color: black; color: white ;">Topic1</h2>
+<!-- Getting started with documentation content <h4 style=" color: red;">"This would view in a different color and font indicating lines of code"</h4> -->
+Let's have a quick look at Java programming example. <br>
+
+<h4>Simple.java</h4>
+
+<span style="color: skyblue;">class</span> Simple{  <br>
+    <span style="color: skyblue;" >public static void</span> main(String args[]){  <br>
+     System.out.println(<span style="color: blue;">"Hello Java"</span>);  <br>
+    }  <br>
+}                                 <br>
+<h2 id="e" style="background-color: black; color: white ;">Topic2</h2>
+<h4>Types of Java Variables</h4>
+<ol><li> Local Variable
+A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.
+
+A local variable cannot be defined with "static" keyword.</li>
+
+<li> Instance Variable
+A variable declared inside the class but outside the body of the method, is called an instance variable. It is not declared as static.
+
+It is called an instance variable because its value is instance-specific and is not shared among instances.
+</li>
+<li> Static variable
+A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class. Memory allocation for static variables happens only once when the class is loaded in the memory.
+</li></ol>
+Example to understand the types of variables in java<br>
+<span  style="color: skyblue;">public</span> class A  <br></br>
+{  <br>
+   <span  style="color: skyblue;"> static int</span> m=<span style="color: red;">100</span>;<span  style="color: green;">//static variable  </span><br></br>
+    <span  style="color: skyblue;">void method</span>() <br></br> 
+    {    <br>
+        <span style="color: skyblue;" >int n=</span><span style="color: red;"> 90</span>;<span style="color: green;" >//local variable   </span> <br></br>
+    }  <br>
+    <span style="color: skyblue;" >public static void</span> main(String args[])  <br></br>
+    {  <br>
+        <span style="color: skyblue;" >int</span> data=<span style="color: red;">50</span>;<span  style="color: green;">//instance variable   </span> <br></br>
+    }  <br>
+}<span style="color: green;" >//end of class  </span> 
+</div>
+</body>
+</html>

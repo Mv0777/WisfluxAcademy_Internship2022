@@ -2,6 +2,9 @@ JS Quiz-4
 
 
 Q1.What are anonymous functions in JavaScript?
+
+
+
 Ans.In JavaScript, an anonymous function is that type of function that has no name or we can say which is without any name. When we create an anonymous function, it is declared without any identifier. It is the difference between a normal function and an anonymous function.
 
 
@@ -12,6 +15,8 @@ Ans.In JavaScript, an anonymous function is that type of function that has no na
 
 
 Q2.Explain strict comparison and Abstract comparison in javascript?
+
+
 Ans.Abstract Equality Comparison Algorithm
 The comparison x == y, where x and y are values, is performed the following way:
 
@@ -73,6 +78,10 @@ F. Otherwise, return false.
 
 
 Q3.Difference b/w arrow functions and regular functions?
+
+
+
+
 Ans.The syntax of arrow functions:-
 
 let x = (parameters) => {
@@ -171,6 +180,9 @@ new x(1,2,3);
 
 
 Q4.What is Hoisting in JS?
+
+
+
 Ans.Hoisting is a mechanism in JavaScript that moves the declaration of variables and functions at the top. So, in JavaScript we can use variables and functions before declaring them. JavaScript hoisting is applicable only for declaration not initialization.
 
 
@@ -190,6 +202,10 @@ Ans.Hoisting is a mechanism in JavaScript that moves the declaration of variable
 
 
 Q5. What is Garbage Collector in JS?
+
+
+
+
 Ans.The Primary Concept
 Reachability is the primary concept of JavaScript memory management. The values that are accessible and usable are known as reachable. Below you will find the set of base reachable values:
 
@@ -284,6 +300,11 @@ It’s essential to know that being referenced is not similar to being reachable
 
 
 Q6.Explain Shallow copy vs Deep copy in Javascript?
+
+
+
+
+
 Ans.A deep copying means that value of the new variable is disconnected from the original variable while a shallow copy means that some values are still connected to the original variable.
 
 Shallow copy example
@@ -392,6 +413,11 @@ In this example, all values in the copiedPerson object are disconnected from the
 
 
 Q7.What is Object.freeze?
+
+
+
+
+
 Ans. The Object. freeze() method freezes an object that prevents new properties from being added to it. This method prevents the modification of existing property, attributes, and values.
 
 
@@ -407,20 +433,43 @@ Ans. The Object. freeze() method freezes an object that prevents new properties 
 
 Program
 
+
+
 1.Write a function that generates a random number between two ranges, -100 to 0 and 800 - 900.
+
+
 
 <script>
 
 // Function to generate random number
+	
+	
+	
 function randomInTwoRange(min1, max1, min2, max2)
+	
+	
  {
 	return Math.random() * (max1 - min1) + min1;
+	
+	
     return Math.random() * (max2 - min2) + min2;
+	
+	
 }
+	
+	
 
 document.write("Random Number between -100 to 0 and 800 to 900: ")
+	
+	
 
 // Function call
+	
+	
 document.write( randomInTwoRange(-100, 0, 800, 900) );
-</script>								
+	
+	
+</script>				
+
+
 

@@ -441,32 +441,99 @@ Program
 
 <script>
 
+	
+	
+	
+	
+	
+	
 // Function to generate random number
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
 function randomInTwoRange(min1, max1, min2, max2)
 	
 	
+	
+	
+	
+	
+	
+	
+	
  {
+	
+	
+	
+	
+	
+	
 	return Math.random() * (max1 - min1) + min1;
+	
+	
+	
+	
+	
 	
 	
     return Math.random() * (max2 - min2) + min2;
 	
 	
+	
+	
+	
+	
+	
+	
 }
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 
 document.write("Random Number between -100 to 0 and 800 to 900: ")
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
 
 // Function call
 	
 	
+	
+	
+	
+	
+	
+	
 document.write( randomInTwoRange(-100, 0, 800, 900) );
+	
+	
+	
+	
+	
+	
+	
 	
 	
 </script>				

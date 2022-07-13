@@ -1,7 +1,7 @@
 # JS Quiz-4
 
 ---
-__Q1.What are anonymous functions in JavaScript?__
+__Q1.What are anonymous functions in JavaScript?__.\
 Ans.In JavaScript, an anonymous function is that type of function that has no name or we can say which is without any name. When we create an anonymous function, it is declared without any identifier. It is the difference between a normal function and an anonymous function.
 
 

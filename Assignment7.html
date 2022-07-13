@@ -1,0 +1,24 @@
+<html>
+    
+TYPESCRIPT TASK
+
+Description:In this assignment you have to animate three different images using html and JavaScript
+in a sequential order with the same animation style with `promises`.Todo:-Create A HTML file with 
+all necessary code and three different images (use any image you want).-Embed your JavaScript file 
+into this html and use the ` animate()` method of DOM toanimate the images before that you need to
+ create your own animation(ex-Rotation, Scaling, etc.).-The Sequence of animation must be Linear 
+ it means the first image will be animate first, then the second and the third one.-Use the Promise
+  chaining or await/async approach.
+ Note: The animate() function returns an AnimationObject,
+   this object has a `finished` property, which is a Promise
+   Reference JavaScript code:
+   const animation= [
+    {transform: 'rotate (0) scale (1)'},
+    ]
+   const animationConfig= {
+    duration: 2000,
+    iterations: 1,
+    fill: 'forwards'}
+   const image = document.querySelector("#image-id");
+   image.animate(animation,animationConfig)
+</html>

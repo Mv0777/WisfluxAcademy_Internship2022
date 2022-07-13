@@ -221,7 +221,7 @@ In JavaScript, there exists a background process, called a garbage collector. It
 
  Example 
 
- #### Javascript object reference.\
+ #### Javascript object reference
  '''javascript
 <script>
 // book has a reference to the object
@@ -254,31 +254,31 @@ In this section, let’ consider that the reference was copied from the book to 
 
  #### Javascript object a case of two reference
  '''javascript
-<script>.\
-// book has a reference to the object.\
-let book = {.\
-  name: "Javascript".\
-};.\
-let language = book;.\
-console.log(language);.\
+<script>
+// book has a reference to the object
+let book = {
+  name: "Javascript"
+};
+let language = book;
+console.log(language);
 
-</script>.\
+</script>
 '''
-Now, doing the same will look like this:.\
+Now, doing the same will look like this:
 
  #### Javascript object reference lost
  '''javascript
-<script>.\
-// book has a reference to the object.\
-let book = {.\
-  name: "Javascript".\
-};.\
-let language = book;.\
-console.log(language);.\
-book = null;.\
-console.log(book);.\
+<script>
+// book has a reference to the object
+let book = {
+  name: "Javascript"
+};
+let language = book;
+console.log(language);
+book = null;
+console.log(book);
 
-</script>.\
+</script>
 '''
 ---
 The object will still be reachable via the language global variable. It’s in the memory. After overwriting the language, it can be deleted.
@@ -407,19 +407,19 @@ copiedPerson.address.street = 'Pataudi Road';
 copiedPerson.address.city = 'Gurugram';
 
 console.log(person);
-Output.\
+Output
 
-{.\
-    firstName: 'Manasvi',.\
-    lastName: 'Aggarwal',.\
-    address: {.\
-        street: 'DR.KN Katju Marg',.\
-        city: 'New Delhi',.\
-        state: 'Delhi',.\
-        country: 'India'.\
-    }.\
-}.\
-</script>.\
+{
+    firstName: 'Manasvi',
+    lastName: 'Aggarwal',
+    address: {
+        street: 'DR.KN Katju Marg',
+        city: 'New Delhi',
+        state: 'Delhi',
+        country: 'India'
+    }
+}
+</script>
 '''
 In this example, all values in the copiedPerson object are disconnected from the original person object. In this tutorial, you have learned how to copy objects in JavaScript using either shallow or deep copy.
 
@@ -454,18 +454,18 @@ Ans. The Object. freeze() method freezes an object that prevents new properties 
 '''javascript
 <script>
 
-// Function to generate random number.\
-function randomInTwoRange(min1, max1, min2, max2).\
+// Function to generate random number
+function randomInTwoRange(min1, max1, min2, max2)
  {
-	return Math.random() * (max1 - min1) + min1;.\
-    return Math.random() * (max2 - min2) + min2;.\
-}.\
+	return Math.random() * (max1 - min1) + min1;
+    return Math.random() * (max2 - min2) + min2;
+}
 
-document.write("Random Number between -100 to 0 and 800 to 900: ").\
+document.write("Random Number between -100 to 0 and 800 to 900: ")
 
-// Function call.\
-document.write( randomInTwoRange(-100, 0, 800, 900) );.\
-</script>.\								
+// Function call
+document.write( randomInTwoRange(-100, 0, 800, 900) );
+</script>								
 
 '''				
 

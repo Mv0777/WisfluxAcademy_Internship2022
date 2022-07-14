@@ -5,13 +5,13 @@ Ans.
 Primitive types
 The following illustrates the primitive types in TypeScript:
 
-Name	 |Description
-string	 |represents text data
-number	 |represents numeric values
-boolean	 |has true and false values
-null	 |has one value: null
-undefined|	has one value: undefined. It is a default value of an uninitialized variable
-symbol	 |represents a unique constant value
+Name	 |Description.\
+string	 |represents text data.\
+number	 |represents numeric values.\
+boolean	 |has true and false values.\
+null	 |has one value: null.\
+undefined|	has one value: undefined. It is a default value of an uninitialized variable.\
+symbol	 |represents a unique constant value.\
 __Q2.What is Generic data type?__.\
 Ans. 
  ### Generic

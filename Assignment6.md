@@ -91,8 +91,9 @@ var square = (x) => {                | let square = function(x){
 };                                   | };
 console.log(square(9));              | console.log(square(9));
     ```                              | ```
-
-                                     |Use of this keyword
+                                     |```javascript
+```
+Use of this keyword
                                      |Unlike regular functions,
                                      |arrow functions do not 
                                      |have their own this.
@@ -113,7 +114,7 @@ console.log(square(9));              | console.log(square(9));
                                     user.func2();
                                      ```
 
-                                     Availability of arguments objects
+                                      Availability of arguments objects
 
                                       Arguments objects are not available in arrow functions,
                                       but are available in regular functions.
@@ -140,9 +141,10 @@ console.log(square(9));              | console.log(square(9));
 
                                        Using new keyword
                                         ```
-
+                                        
                                            ---
-                                        Regular functions created using function declarations
+					   
+                                         Regular functions created using function declarations
                                          or expressions are ‘constructible’ and ‘callable’. 
                                          Since regular functions are constructible, they can 
                                           be called using the ‘new’ keyword. However, the 
@@ -166,6 +168,8 @@ console.log(square(9));              | console.log(square(9));
                                             };
                                          new x(1,2,3);
                                              ```
+					     
+
 
                                             
                                            
@@ -190,12 +194,13 @@ console.log(square(9));              | console.log(square(9));
 
 
 
+```javascript
+```
+
 
 
 __Q4.What is Hoisting in JS?__.\
 Ans.Hoisting is a mechanism in JavaScript that moves the declaration of variables and functions at the top. So, in JavaScript we can use variables and functions before declaring them. JavaScript hoisting is applicable only for declaration not initialization.
-
-
 
 
 
@@ -262,7 +267,6 @@ In this section, let’ consider that the reference was copied from the book to 
 
  #### Javascript object a case of two reference
 ```javascript
-<script>
 // book has a reference to the object
 let book = {
   name: "Javascript"
@@ -276,7 +280,6 @@ Now, doing the same will look like this:
 
  #### Javascript object reference lost
 ```javascript
-<script>
 // book has a reference to the object
 let book = {
   name: "Javascript"

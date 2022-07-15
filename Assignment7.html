@@ -12,6 +12,7 @@ into this html and use the ` animate()` method of DOM toanimate the images befor
  Note: The animate() function returns an AnimationObject,
    this object has a `finished` property, which is a Promise
    Reference JavaScript code:
+    <script>
    const animation= [
     {transform: 'rotate (0) scale (1)'},
     ]
@@ -21,4 +22,5 @@ into this html and use the ` animate()` method of DOM toanimate the images befor
     fill: 'forwards'}
    const image = document.querySelector("#image-id");
    image.animate(animation,animationConfig)
+    </script>
 </html>

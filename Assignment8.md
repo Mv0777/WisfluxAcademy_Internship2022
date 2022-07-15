@@ -20,8 +20,9 @@ Ans.
 In Node.js, file I/O is provided by simple wrappers around standard POSIX functions. Node File System (fs) module can be imported using following syntax:
 
 Syntax:
-
+```javascript
 var fs = require("fs")  
+```
 Node.js FS Reading File
 Every method in fs module has synchronous and asynchronous forms.
 
@@ -40,7 +41,7 @@ Javatpoint is a one of the best online tutorial website to learn different techn
 Let's take an example to create a JavaScript file named "main.js" having the following code:
 
 File: main.js
-
+```javascript
 var fs = require("fs");  
 // Asynchronous read  
 fs.readFile('input.txt', function (err, data) {  
@@ -53,17 +54,20 @@ fs.readFile('input.txt', function (err, data) {
 var data = fs.readFileSync('input.txt');  
 console.log("Synchronous read: " + data.toString());  
 console.log("Program Ended");  
+```
 Open Node.js command prompt and run the main.js:
-
+```javascript
 node main.js  
+```
 Node.js file system 1
 Node.js Open a file
 Syntax:
 
 Following is the syntax of the method to open a file in asynchronous mode:
+```javascript
 
-
-fs.open(path, flags[, mode], callback)   
+fs.open(path, flags[, mode], callback)  
+```
 Parameter explanation:
 
 Following is the description of parameters used in the above syntax:
@@ -97,7 +101,7 @@ Create a JavaScript file named "main.js" having the following code to open a fil
 
 
 File: main.js
-
+```javascript
 var fs = require("fs");  
 // Asynchronous - Opening File  
 console.log("Going to open file!");  
@@ -107,16 +111,23 @@ fs.open('input.txt', 'r+', function(err, fd) {
    }  
   console.log("File opened successfully!");       
 });  
+```
 Open Node.js command prompt and run the main.js:
+```javascript
 
 node main.js  
+```
+
 Node.js file system 2
 Node.js File Information Method
 Syntax:
 
 Following is syntax of the method to get file information.
+```javascript
 
 fs.stat(path, callback)  
+```
+
 Parameter explanation:
 
 Path: This is string having file name including path.
@@ -135,6 +146,7 @@ stats.issocket()	returns true if file type of asocket.
 Let's take an example to create a JavaScript file named main.js having the following code:
 
 File: main.js
+```javascript
 
 
 var fs = require("fs");  
@@ -149,9 +161,12 @@ fs.stat('input.txt', function (err, stats) {
    console.log("isFile ? " + stats.isFile());  
    console.log("isDirectory ? " + stats.isDirectory());      
 });  
+```
 Now open the Node.js command prompt and run the main.js
+```javascript
 
 node main.js  
+```
 __Q6.What is API?__.\
 Ans.API is the abbreviation of the term Application Programming Interface. It is the software responsible for the connection for the communication and information exchange between two apps. API connects two devices or programs in order to facilitate the exchange of information between them. It is the interface that serves the other parts of the software. The API specifications are the standards or documents designed to describe the creation of such connections. If a computer system meets these standards, then it is said to expose an API. The specification or implementation both are known as the API.
 

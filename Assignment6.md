@@ -83,18 +83,23 @@ let x = (parameters) => {            |    let x = function function_name(paramet
                                      |
                                      |
 Example of arrow functions:-         |   Example of regular functions:-
-                                     |
+  ```javascript
+                                     |```javascript
+
 var square = (x) => {                | let square = function(x){
     return (x*x);                    | return (x*x);
 };                                   | };
 console.log(square(9));              | console.log(square(9));
+    ```                              | ```
+
                                      |Use of this keyword
                                      |Unlike regular functions,
                                      |arrow functions do not 
                                      |have their own this.
                                      |For example:-
-                                      '''javascript
-                                     <script>
+                                      ```javascript
+
+                                     
                                      let user = {
                                     name: "func",
                                       func1:() => {
@@ -106,14 +111,15 @@ console.log(square(9));              | console.log(square(9));
                                     };
                                     user.func1();
                                     user.func2();
-                                     </script>
-                                     '''
+                                     ```
+
                                      Availability of arguments objects
 
                                       Arguments objects are not available in arrow functions,
                                       but are available in regular functions.
-                                    '''javascript
-                                       <script>
+                                    ```javascript
+
+                                      
                                        Example using regular ():-
 
                                        let user = {      
@@ -133,8 +139,8 @@ console.log(square(9));              | console.log(square(9));
                                              user.show_ar(1, 2, 3);
 
                                        Using new keyword
-                                         '''
-                                        </script>
+                                        ```
+
                                            ---
                                         Regular functions created using function declarations
                                          or expressions are ‘constructible’ and ‘callable’. 
@@ -145,8 +151,9 @@ console.log(square(9));              | console.log(square(9));
                                         a non-constructible arrow functions using the new keyword.
 
                                          Example using regular function:-
-                                        '''javascript
-                                           <script>
+                                        ```javascript
+
+                                           
                                        let x = function(){
                                                console.log(arguments);
                                              };
@@ -158,9 +165,10 @@ console.log(square(9));              | console.log(square(9));
                                          console.log(arguments);
                                             };
                                          new x(1,2,3);
+                                             ```
 
-                                            </script>
-                                           '''
+                                            
+                                           
 
 
 
@@ -222,30 +230,30 @@ In JavaScript, there exists a background process, called a garbage collector. It
  Example 
 
  #### Javascript object reference
- '''javascript
-<script>
+```javascript
+
 // book has a reference to the object
 let book = {
   name: "Javascript"
 };
 console.log(book);
-</script>
-'''
+```
+
 As you can see, the object reference is depicted by the arrow. The global variable "book" is referencing the object. The "name" property itself stores a primitive.
 
 In case the book value is overwritten, the reference will be lost, as shown below:
 
  #### Javascript object reference lost
- '''javascript
-<script>
+```javascript
+
 // book has a reference to the object
 let book = {
   name: "Javascript"
 };
 book = null;
 console.log(book);
-</script>
-'''
+```
+
 
 So, the object becomes unreachable. The garbage collector junks the data, freeing the memory.
 
@@ -253,7 +261,7 @@ A Case of Two References
 In this section, let’ consider that the reference was copied from the book to language like this:
 
  #### Javascript object a case of two reference
- '''javascript
+```javascript
 <script>
 // book has a reference to the object
 let book = {
@@ -262,12 +270,12 @@ let book = {
 let language = book;
 console.log(language);
 
-</script>
-'''
+```
+
 Now, doing the same will look like this:
 
  #### Javascript object reference lost
- '''javascript
+```javascript
 <script>
 // book has a reference to the object
 let book = {
@@ -278,8 +286,8 @@ console.log(language);
 book = null;
 console.log(book);
 
-</script>
-'''
+```
+
 ---
 The object will still be reachable via the language global variable. It’s in the memory. After overwriting the language, it can be deleted.
 
@@ -322,8 +330,8 @@ Ans.A deep copying means that value of the new variable is disconnected from the
 
 Shallow copy example
 Consider the following example:
-'''javascript
-<script>
+```javascript
+
 let person = {
     firstName: 'Manasvi',
     lastName: 'Aggarwal',
@@ -344,14 +352,16 @@ copiedPerson.address.street = 'Pataudi Road'; // connected
 copiedPerson.address.city = 'Gurugram'; // connected
 
 console.log(copiedPerson);
-</>
+```
+
 In this example:
 
 First, create a new object named person.
 Second, clone the person object using the Object.assign() method.
 Third, change the first name and address information of the copiedPerson object.
 Here is the output:
-'''javascript
+```javascript
+
 <script>
 {
     firstName: 'Monica',
@@ -363,9 +373,11 @@ Here is the output:
         country: 'India'
     }
 }
-'''
+```
+
 However, when you show the values of the person object, you will find that the address information changed but the first name:
-'''javascript
+```javascript
+
 console.log(person);
 Output:
 
@@ -380,13 +392,13 @@ Output:
     }
 }
 </>
-'''
+```
+
 The reason is that the address is reference value while the first name is a primitive value. Both person and copiedPerson references different objects but these objects reference the same address objects.
 
 Deep copy example
 The following snippet replaces the Object.assign() method by the JSON methods to carry a deep copy the person object:
-'''javascript
-<script>
+```javascript
 let person = {
     firstName: 'Manasvi',
     lastName: 'Aggarwal',
@@ -419,8 +431,8 @@ Output
         country: 'India'
     }
 }
-</script>
-'''
+```
+
 In this example, all values in the copiedPerson object are disconnected from the original person object. In this tutorial, you have learned how to copy objects in JavaScript using either shallow or deep copy.
 
 
@@ -451,8 +463,7 @@ Ans. The Object. freeze() method freezes an object that prevents new properties 
 
 
 1.Write a function that generates a random number between two ranges, -100 to 0 and 800 - 900.
-'''javascript
-<script>
+```javascript
 
 // Function to generate random number
 function randomInTwoRange(min1, max1, min2, max2)
@@ -465,9 +476,8 @@ document.write("Random Number between -100 to 0 and 800 to 900: ")
 
 // Function call
 document.write( randomInTwoRange(-100, 0, 800, 900) );
-</script>								
-
-'''				
+```
+				
 
 
 

@@ -73,50 +73,50 @@ If the type of x is a number, then:
 
 
 
-__Q3.Difference b/w arrow functions and regular functions?__.\
+__Q3.Difference b/w arrow functions and regular functions?__\
 Ans.The syntax of arrow functions:-  |Syntax of regular functions:-
 
 
-let x = (parameters) => {            |    let x = function function_name(parameters){
-       // body of the function       |                 // body of the function
-        };                           |                   };     
+let x = (parameters) => {            |    let x = function function_name(parameters){\
+       // body of the function       |                 // body of the function\
+        };                           |                   };     \
                                      |
                                      |
-Example of arrow functions:-         |   Example of regular functions:-
+Example of arrow functions:-         |   Example of regular functions:-\
   ```javascript
                                      |```javascript
 
-var square = (x) => {                | let square = function(x){
-    return (x*x);                    | return (x*x);
-};                                   | };
-console.log(square(9));              | console.log(square(9));
+var square = (x) => {                | let square = function(x){\
+    return (x*x);                    | return (x*x);\
+};                                   | };\
+console.log(square(9));              | console.log(square(9));\
     ```                              | ```
                                      |```javascript
 ```
-   Use of this keyword
-                                     |Unlike regular functions,
-                                     |arrow functions do not 
-                                     |have their own this.
-                                     |For example:-
+   |Use of this keyword\
+                                     |Unlike regular functions,\
+                                     |arrow functions do not \
+                                     |have their own this.\
+                                     |For example:-\
 
 
-                                     let user = {
-                                    name: "func",
-                                      func1:() => {
-                                    console.log("hello " + this.name); // no 'this' binding here
-                                      },
-                                      func2(){       
-                                    console.log("Welcome to " + this.name); // 'this' binding works here
-                                     }  
-                                    };
-                                    user.func1();
-                                    user.func2(); 			    
+                                     let user = { \
+                                    name: "func", \
+                                      func1:() => { \
+                                    console.log("hello " + this.name); // no 'this' binding here \
+                                      }; \
+                                      func2(){   \    
+                                    console.log("Welcome to " + this.name); // 'this' binding works here\
+                                     }  \
+                                    }; \
+                                    user.func1(); \
+                                    user.func2(); \			    
 
                                   
 				  
-Availability of arguments objects
-                                     Arguments objects are not available in arrow functions,
-                                     but are available in regular functions.
+|Availability of arguments objects \
+                                     |Arguments objects are not available in arrow functions, \
+                                     |but are available in regular functions. \
                                    
 
                                       
@@ -143,17 +143,17 @@ Availability of arguments objects
                                            
 					
 					   
-   Regular functions created using function declarations
-                                         or expressions are ‘constructible’ and ‘callable’. 
-                                         Since regular functions are constructible, they can 
-                                          be called using the ‘new’ keyword. However, the 
-                                        arrow functions are only ‘callable’ and not constructible.
-                                        Thus, we will get a run-time error on trying to construct
-                                        a non-constructible arrow functions using the new keyword.
+   |Regular functions created using function declarations
+                                        | or expressions are ‘constructible’ and ‘callable’. 
+                                        |Since regular functions are constructible, they can 
+                                        |be called using the ‘new’ keyword. However, the 
+                                        |arrow functions are only ‘callable’ and not constructible.
+                                        |Thus, we will get a run-time error on trying to construct
+                                        |a non-constructible arrow functions using the new keyword.
 					
 				
 
-   Example using regular function:-
+   |Example using regular function:-
                                         
 
                                            

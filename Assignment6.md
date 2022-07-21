@@ -1,4 +1,4 @@
-# JS Quiz-4
+# JS-Quiz4
 
 ---
 __Q1.What are anonymous functions in JavaScript?__.\

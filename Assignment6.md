@@ -93,14 +93,13 @@ console.log(square(9));              | console.log(square(9));
     ```                              | ```
                                      |```javascript
 ```
-Use of this keyword
+   Use of this keyword
                                      |Unlike regular functions,
                                      |arrow functions do not 
                                      |have their own this.
                                      |For example:-
-                                      ```javascript
 
-                                     
+
                                      let user = {
                                     name: "func",
                                       func1:() => {
@@ -111,14 +110,14 @@ Use of this keyword
                                      }  
                                     };
                                     user.func1();
-                                    user.func2();
-                                     ```
+                                    user.func2(); 			    
 
-                                      Availability of arguments objects
-
-                                      Arguments objects are not available in arrow functions,
-                                      but are available in regular functions.
-                                    ```javascript
+                                  
+				  
+Availability of arguments objects
+                                     Arguments objects are not available in arrow functions,
+                                     but are available in regular functions.
+                                   
 
                                       
                                        Example using regular ():-
@@ -140,20 +139,22 @@ Use of this keyword
                                              user.show_ar(1, 2, 3);
 
                                        Using new keyword
-                                        ```
                                         
-                                           ---
+                                           
+					
 					   
-                                         Regular functions created using function declarations
+   Regular functions created using function declarations
                                          or expressions are ‘constructible’ and ‘callable’. 
                                          Since regular functions are constructible, they can 
                                           be called using the ‘new’ keyword. However, the 
                                         arrow functions are only ‘callable’ and not constructible.
                                         Thus, we will get a run-time error on trying to construct
                                         a non-constructible arrow functions using the new keyword.
+					
+				
 
-                                         Example using regular function:-
-                                        ```javascript
+   Example using regular function:-
+                                        
 
                                            
                                        let x = function(){
@@ -167,7 +168,7 @@ Use of this keyword
                                          console.log(arguments);
                                             };
                                          new x(1,2,3);
-                                             ```
+                                           
 					     
 
 
@@ -328,11 +329,11 @@ It’s essential to know that being referenced is not similar to being reachable
 
 
 
-__Q6.Explain Shallow copy vs Deep copy in Javascript?__
-Ans.A deep copying means that value of the new variable is disconnected from the original variable while a shallow copy means that some values are still connected to the original variable.
+__Q6.Explain Shallow copy vs Deep copy in Javascript?__ \
+Ans.A deep copying means that value of the new variable is disconnected from the original variable while a shallow copy means that some values are still connected to the original variable.\
 
-Shallow copy example
-Consider the following example:
+Shallow copy example\
+Consider the following example:\
 ```javascript
 
 let person = {
@@ -357,11 +358,11 @@ copiedPerson.address.city = 'Gurugram'; // connected
 console.log(copiedPerson);
 ```
 
-In this example:
+In this example:\
 
-First, create a new object named person.
-Second, clone the person object using the Object.assign() method.
-Third, change the first name and address information of the copiedPerson object.
+First, create a new object named person.\
+Second, clone the person object using the Object.assign() method.\
+Third, change the first name and address information of the copiedPerson object.\
 Here is the output:
 ```javascript
 
@@ -378,7 +379,7 @@ Here is the output:
 }
 ```
 
-However, when you show the values of the person object, you will find that the address information changed but the first name:
+However, when you show the values of the person object, you will find that the address information changed but the first name:\
 ```javascript
 
 console.log(person);
@@ -397,10 +398,10 @@ Output:
 </>
 ```
 
-The reason is that the address is reference value while the first name is a primitive value. Both person and copiedPerson references different objects but these objects reference the same address objects.
+The reason is that the address is reference value while the first name is a primitive value. Both person and copiedPerson references different objects but these objects reference the same address objects.\
 
-Deep copy example
-The following snippet replaces the Object.assign() method by the JSON methods to carry a deep copy the person object:
+Deep copy example\
+The following snippet replaces the Object.assign() method by the JSON methods to carry a deep copy the person object:\
 ```javascript
 let person = {
     firstName: 'Manasvi',
@@ -436,7 +437,7 @@ Output
 }
 ```
 
-In this example, all values in the copiedPerson object are disconnected from the original person object. In this tutorial, you have learned how to copy objects in JavaScript using either shallow or deep copy.
+In this example, all values in the copiedPerson object are disconnected from the original person object. In this tutorial, you have learned how to copy objects in JavaScript using either shallow or deep copy.\
 
 
 
@@ -447,8 +448,8 @@ In this example, all values in the copiedPerson object are disconnected from the
 
 
 
-__Q7.What is Object.freeze?__
-Ans. The Object. freeze() method freezes an object that prevents new properties from being added to it. This method prevents the modification of existing property, attributes, and values.
+__Q7.What is Object.freeze?__\
+Ans. The Object. freeze() method freezes an object that prevents new properties from being added to it. This method prevents the modification of existing property, attributes, and values.\
 
 
 

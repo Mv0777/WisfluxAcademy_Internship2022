@@ -143,13 +143,13 @@ console.log(square(9));              | console.log(square(9));\
                                            
 					
 					   
-   |Regular functions created using function declarations
-                                        | or expressions are ‘constructible’ and ‘callable’. 
-                                        |Since regular functions are constructible, they can 
-                                        |be called using the ‘new’ keyword. However, the 
-                                        |arrow functions are only ‘callable’ and not constructible.
-                                        |Thus, we will get a run-time error on trying to construct
-                                        |a non-constructible arrow functions using the new keyword.
+   |Regular functions created using function declarations \
+                                        | or expressions are ‘constructible’ and ‘callable’. \
+                                        |Since regular functions are constructible, they can \
+                                        |be called using the ‘new’ keyword. However, the \
+                                        |arrow functions are only ‘callable’ and not constructible.\
+                                        |Thus, we will get a run-time error on trying to construct\
+                                        |a non-constructible arrow functions using the new keyword.\
 					
 				
 

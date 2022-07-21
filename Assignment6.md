@@ -11,59 +11,59 @@ Ans.In JavaScript, an anonymous function is that type of function that has no na
 
 
 
-__Q2.Explain strict comparison and Abstract comparison in javascript?__.\
-Ans._Abstract Equality Comparison Algorithm_
-The comparison x == y, where x and y are values, is performed the following way:
+__Q2.Explain strict comparison and Abstract comparison in javascript?__\
+Ans._Abstract Equality Comparison Algorithm_\
+The comparison x == y, where x and y are values, is performed the following way:\
 
-If x and y are of the same type, then:
+If x and y are of the same type, then:\
 
-1. If the type of x is undefined, return true.
+1. If the type of x is undefined, return true.\
 
-2. If the type of x is null, return true.
+2. If the type of x is null, return true.\
 
-3. If the type of x is a number, then:
+3. If the type of x is a number, then:\
 ---
-If x is NaN, return false.
-If y is NaN, return false.
-If x is the same number as y, return true.
-If x is +0 and y is -0, return true.
-If x is -0 and y is +0, return true.
-Otherwise, return false.
-4. If the type of x is a string, then if x and y are of the same length and the same characters are at the corresponding positions, return true, otherwise, return false.
+If x is NaN, return false.\
+If y is NaN, return false.\
+If x is the same number as y, return true.\
+If x is +0 and y is -0, return true.\
+If x is -0 and y is +0, return true.\
+Otherwise, return false.\
+4. If the type of x is a string, then if x and y are of the same length and the same characters are at the corresponding positions, return true, otherwise, return false.\
 
-5. If the type of x is a boolean, if both x and y are true or false, return true, otherwise, return false.
+5. If the type of x is a boolean, if both x and y are true or false, return true, otherwise, return false.\
 
-6. If x and y refer to the same object, return true, otherwise, return false.
+6. If x and y refer to the same object, return true, otherwise, return false.\
 ---
-If x is null and y is undefined, return true.
-If x is undefined and y is null, return true.
-If the type of x is a number and the type of y is a string, return the result of comparison x == ToNumber(y).
-If the type of y is a number and the type of x is a string, return the result of comparison ToNumber(x) == y.
-If the type of x is a boolean, return the result of the comparison ToNumber(x) == y.
-If the type of y is a boolean, return the result of the comparison x == ToNumber(y).
-If the type of x is either a string or a number, and the type of y is an object, return the result of comparison x == ToPrimitive(y).
-If the type of y is either a string or a number, and the type of x is an object, return the result of comparison ToPrimitive(x) == y.
-Otherwise, return false
-_Strict Equality Comparison Algorithm_
+If x is null and y is undefined, return true.\
+If x is undefined and y is null, return true.\
+If the type of x is a number and the type of y is a string, return the result of comparison x == ToNumber(y).\
+If the type of y is a number and the type of x is a string, return the result of comparison ToNumber(x) == y.\
+If the type of x is a boolean, return the result of the comparison ToNumber(x) == y.\
+If the type of y is a boolean, return the result of the comparison x == ToNumber(y).\
+If the type of x is either a string or a number, and the type of y is an object, return the result of comparison x == ToPrimitive(y).\
+If the type of y is either a string or a number, and the type of x is an object, return the result of comparison ToPrimitive(x) == y.\
+Otherwise, return false\
+_Strict Equality Comparison Algorithm_\
 
-The comparison x === y, where x and y are values, is performed the following way:
+The comparison x === y, where x and y are values, is performed the following way:\
 
-If the type of x is different from the type of y, return false.
-If the type of x is undefined, return true.
-If the type of x is null, return true.
-If the type of x is a number, then:
+If the type of x is different from the type of y, return false.\
+If the type of x is undefined, return true.\
+If the type of x is null, return true.\
+If the type of x is a number, then:\
 
-1. If x is a NaN, return false.
+1. If x is a NaN, return false.\
 
-2. If y is a NaN, return false.
+2. If y is a NaN, return false.\
 
-3. If x is the same number as y, return true.
+3. If x is the same number as y, return true.\
 
-4. If x is +0 and y is -0, return true.
+4. If x is +0 and y is -0, return true.\
 
-5. If x is -0 and y is +0, return true.
+5. If x is -0 and y is +0, return true.\
 
-6. Otherwise, return false.
+6. Otherwise, return false.\
 
 
 
@@ -84,15 +84,20 @@ let x = (parameters) => {            |    let x = function function_name(paramet
                                      |
 Example of arrow functions:-         |   Example of regular functions:-\
   ```javascript
-                                     |```javascript
+                                     |
 
 var square = (x) => {                | let square = function(x){\
     return (x*x);                    | return (x*x);\
 };                                   | };\
 console.log(square(9));              | console.log(square(9));\
-    ```                              | ```
-                                     |```javascript
+    ```                              | 
+                                     |
+				     
+				     
+				     
+				    ```javascript
 ```
+
    |Use of this keyword\
                                      |Unlike regular functions,\
                                      |arrow functions do not \

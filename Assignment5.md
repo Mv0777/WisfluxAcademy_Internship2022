@@ -363,7 +363,7 @@ By object literal
 By creating instance of Object directly (using new keyword)
 By using an object constructor (using new keyword)
 JavaScript Object Methods
-The various methods of Object are as follows:./
+The various methods of Object are as follows: &nbsp; 
 
 
 S.No	Methods	Description

@@ -67,14 +67,14 @@ class Operation{
 
 Q9. What are the primitive data types in Javascript?
 Ans.JavaScript primitive data types
-There are five types of primitive data types in JavaScript. They are as follows: &nbsp; 
+There are five types of primitive data types in JavaScript. They are as follows:\ 
 
-Data Type	Description &nbsp; 
-String	        represents sequence of characters e.g. "hello" &nbsp; 
-Number	        represents numeric values e.g. 100 &nbsp; 
-Boolean	        represents boolean value either false or true &nbsp; 
-Undefined	represents undefined value &nbsp; 
-Null	        represents null i.e. no value at all &nbsp; 
+Data Type	Description \  
+String	        represents sequence of characters e.g. "hello" \  
+Number	        represents numeric values e.g. 100 \  
+Boolean	        represents boolean value either false or true\  
+Undefined	represents undefined value \ 
+Null	        represents null i.e. no value at all \ 
 
 
 Q10.What is DOM?
@@ -363,50 +363,50 @@ By object literal
 By creating instance of Object directly (using new keyword)
 By using an object constructor (using new keyword)
 JavaScript Object Methods
-The various methods of Object are as follows: &nbsp; 
+The various methods of Object are as follows: \ 
 
 
-S.No	Methods	Description &nbsp; 
-1	Object.assign()&nbsp; 
-This method is used to copy enumerable and own properties from a source object to a target object. &nbsp; 
-2	Object.create() &nbsp; 
-This method is used to create a new object with the specified prototype object and properties.&nbsp; 
-3	Object.defineProperty() &nbsp; 
-This method is used to describe some behavioral attributes of the property. &nbsp; 
-4	Object.defineProperties() &nbsp; 
-This method is used to create or configure multiple object properties. &nbsp; 
-5	Object.entries() &nbsp; 
-This method returns an array with arrays of the key, value pairs. &nbsp; 
-6	Object.freeze() &nbsp; 
-This method prevents existing properties from being removed. &nbsp; 
-7	Object.getOwnPropertyDescriptor() &nbsp; 
-This method returns a property descriptor for the specified property of the specified object. &nbsp; 
-8	Object.getOwnPropertyDescriptors() &nbsp; 
-This method returns all own property descriptors of a given object. &nbsp; 
-9	Object.getOwnPropertyNames() &nbsp; 
-This method returns an array of all properties (enumerable or not) found. &nbsp; 
-10	Object.getOwnPropertySymbols() &nbsp; 
-This method returns an array of all own symbol key properties. &nbsp; 
-11	Object.getPrototypeOf() &nbsp; 
-This method returns the prototype of the specified object. &nbsp; 
-12	Object.is() &nbsp; 
+S.No	Methods	Description \ 
+1	Object.assign() \ 
+This method is used to copy enumerable and own properties from a source object to a target object. \ 
+2	Object.create() \ 
+This method is used to create a new object with the specified prototype object and properties.\ 
+3	Object.defineProperty() \ 
+This method is used to describe some behavioral attributes of the property.\ 
+4	Object.defineProperties() \ 
+This method is used to create or configure multiple object properties. \ 
+5	Object.entries() \ 
+This method returns an array with arrays of the key, value pairs. \ 
+6	Object.freeze() \ 
+This method prevents existing properties from being removed.\  
+7	Object.getOwnPropertyDescriptor() \  
+This method returns a property descriptor for the specified property of the specified object. \ 
+8	Object.getOwnPropertyDescriptors() \ 
+This method returns all own property descriptors of a given object. \ 
+9	Object.getOwnPropertyNames() \ 
+This method returns an array of all properties (enumerable or not) found. \  
+10	Object.getOwnPropertySymbols() \  
+This method returns an array of all own symbol key properties.\ 
+11	Object.getPrototypeOf() \ 
+This method returns the prototype of the specified object. \ 
+12	Object.is() \ 
 This method determines whether two values are the same value. &nbsp; 
-13	Object.isExtensible() &nbsp; 
+13	Object.isExtensible()\ 
 This method determines if an object is extensible &nbsp; 
-14	Object.isFrozen() &nbsp; 
+14	Object.isFrozen() \ 
 This method determines if an object was frozen. &nbsp; 
-15	Object.isSealed() &nbsp; 
+15	Object.isSealed() \ 
 This method determines if an object is sealed. &nbsp; 
-16	Object.keys() &nbsp; 
+16	Object.keys()\ 
 This method returns an array of a given object's own property names. &nbsp; 
-17	Object.preventExtensions() &nbsp; 
+17	Object.preventExtensions() \  
 This method is used to prevent any extensions of an object. &nbsp; 
-18	Object.seal() &nbsp; 
+18	Object.seal() \  
 This method prevents new properties from being added and marks all existing properties as non-configurable. &nbsp; 
-19	Object.setPrototypeOf() &nbsp; 
+19	Object.setPrototypeOf() \  
 This method sets the prototype of a specified object to another object. &nbsp; 
-20	Object.values() &nbsp; 
-This method returns an array of values. &nbsp; 
+20	Object.values() \  
+This method returns an array of values. \ 
 
 	
 	Q2.Read the code :

@@ -256,9 +256,14 @@ Remember that types are always fully erased! At runtime, there's only oneBox.def
 
 Define the types in typescript for the given following JavaScript code.
  ```javascript
+ 
+ ```javascript 
+ ``` 
  Todo:-Define type/interface for a single Todo object.
  -Define type for each function.
  -Do not use `any` (TS Data Type) type of typescript.
+ ```javascript
+ ```
  Code: var todos = [];
  function add(name, description)
  {return todos.push

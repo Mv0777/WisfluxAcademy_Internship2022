@@ -344,9 +344,11 @@ const set3 = new Set(['three']);
 const set4 = new Set([...set1, ...set2, ...set3]);
 console.log(set4); //  {'one', 'two', 'three'}
 ```
+```javascript
+```
 
 	
-	# JS-Quiz3
+# JS-Quiz3
 
 	
 	__Q1.Explain as much as you know about objects in javascript?

@@ -104,8 +104,9 @@ console.log(square(9));              | console.log(square(9));\
                                      |have their own this.\
                                      |For example:-\
 
-
-                                     let user = { \
+                                    
+                                     ```javascript
+				     let user = { \
                                     name: "func", \
                                       func1:() => { \
                                     console.log("hello " + this.name); // no 'this' binding here \
@@ -115,7 +116,7 @@ console.log(square(9));              | console.log(square(9));\
                                      }  \
                                     }; \
                                     user.func1(); \
-                                    user.func2(); \			    
+                                    user.func2();``` \			    
 
                                   
 				  
@@ -127,7 +128,8 @@ console.log(square(9));              | console.log(square(9));\
                                       
                                        Example using regular ():-
 
-                                       let user = {      
+                                       ```javascript
+				       let user = {      
                                                show(){
                                           console.log(arguments);
                                               }
@@ -142,6 +144,7 @@ console.log(square(9));              | console.log(square(9));\
                                                             }
                                                          };
                                              user.show_ar(1, 2, 3);
+					     ```
 
                                        Using new keyword
                                         
@@ -162,7 +165,8 @@ console.log(square(9));              | console.log(square(9));\
                                         
 
                                            
-                                       let x = function(){
+                                       ```javascript
+				       let x = function(){
                                                console.log(arguments);
                                              };
                                            new x =(1,2,3);
@@ -172,7 +176,7 @@ console.log(square(9));              | console.log(square(9));\
                                          let x = ()=> {
                                          console.log(arguments);
                                             };
-                                         new x(1,2,3);
+                                         new x(1,2,3);```
                                            
 					     
 

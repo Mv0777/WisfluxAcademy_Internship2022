@@ -190,24 +190,24 @@ Ans.
 __Q8.Why we use JSON format for API?__.\
 Ans.Since JSON is an easy-to-use, lightweight language data interchange format in comparison to other available options, it can be used for API integration. Following are the advantages of JSON:
 
-1.Less Verbose: In contrast to XML, JSON follows a compact style to improve its users' readability. While working with a complex system, JSON tends to make substantial enhancements.
-2.Faster: The JSON parsing process is faster than that of the XML because the DOM manipulation library in XML requires extra memory for handling large XML files. However, JSON requires less data that ultimately results in reducing the cost and increasing the parsing speed.
-3.Readable: The JSON structure is easily readable and straightforward. Regardless of the programming language that you are using, you can easily map the domain objects.
-4.Structured Data: In JSON, a map data structure is used, whereas XML follows a tree structure. The key-value pairs limit the task but facilitate the predictive and easily understandable model.
-__Q9.What is a Framework?__.\
+1.Less Verbose: In contrast to XML, JSON follows a compact style to improve its users' readability. While working with a complex system, JSON tends to make substantial enhancements. \
+2.Faster: The JSON parsing process is faster than that of the XML because the DOM manipulation library in XML requires extra memory for handling large XML files. However, JSON requires less data that ultimately results in reducing the cost and increasing the parsing speed. \
+3.Readable: The JSON structure is easily readable and straightforward. Regardless of the programming language that you are using, you can easily map the domain objects.\
+4.Structured Data: In JSON, a map data structure is used, whereas XML follows a tree structure. The key-value pairs limit the task but facilitate the predictive and easily understandable model.\
+__Q9.What is a Framework?__ \
 Ans.
 As Express is a lightweight, minimal and flexible Node.js web application framework, it provides a robust set of features for web and mobile applications.
  Following is the list of some distinctive features of this framework:
 
-1.js can be used to design single-page, multi-page, and hybrid web applications and APIs.
-2.It allows to set up middleware to respond to HTTP/RESTful Requests.
-3.It defines a routing table to perform different HTTP operations (method and URL).
-4.It allows to dynamically rendering HTML Pages based on passing arguments to templates.
-5.It provides high performance because of its ultra-fast I/O. It prepares a thin layer; therefore, the performance is adequate.
-6.Its MVC-like structure makes it organize the web application into MVC architecture.
-7.It provides good database support. It supports RDBMS as well as NoSQL databases.
-8.It is asynchronous and single-threaded.
-9.Its robust API makes routing easy.
+1.js can be used to design single-page, multi-page, and hybrid web applications and APIs.\
+2.It allows to set up middleware to respond to HTTP/RESTful Requests.\
+3.It defines a routing table to perform different HTTP operations (method and URL).\
+4.It allows to dynamically rendering HTML Pages based on passing arguments to templates.\
+5.It provides high performance because of its ultra-fast I/O. It prepares a thin layer; therefore, the performance is adequate.\
+6.Its MVC-like structure makes it organize the web application into MVC architecture.\
+7.It provides good database support. It supports RDBMS as well as NoSQL databases.\
+8.It is asynchronous and single-threaded.\
+9.Its robust API makes routing easy.\
 __Q10.How an HTTP Communication works.__.\
 Ans.The HTTP Communication
 When a client wants to communicate with a server, the first thing that happens, after the user types the URL in the browser address bar or goes to another page, is opening a TCP/IP connection, and the HTTP request is sent to the server. In that request, there is a message with a series of data describing what the customer has requested. The server then sends the response to the client, which also contains data that can be read. Finally, the request-response process is finalized. Keep in mind that everything here usually takes microseconds to happen.
@@ -218,18 +218,20 @@ It can end the request-response cycle.
 
 
 ## Program 
--Create a Rest API using ExpressJS and Typescript, which has five endpoints of type:-POST 
-–Create a user and save it into a JSON file.-PUT –Update a user on the basis of its email.
--GET–Get a specific user detail on the basis of email from JSON File.
--DELETE –Delete a specific user on the basis of email.
--Get –A Get request for getting all the available user in JSON file.Note:
--If there is already an email exist in JSON file, User can not add the user with duplicate email.
--The JSON File will contain anarray of Users.
--User Type Example: 
+-Create a Rest API using ExpressJS and Typescript, which has five endpoints of type:-POST \
+–Create a user and save it into a JSON file.-PUT –Update a user on the basis of its email.\
+-GET–Get a specific user detail on the basis of email from JSON File.\
+-DELETE –Delete a specific user on the basis of email.\
+-Get –A Get request for getting all the available user in JSON file.Note:\
+-If there is already an email exist in JSON file, User can not add the user with duplicate email.\
+-The JSON File will contain anarray of Users.\
+-User Type Example: \
+```javascript
 {name: “Jhon Doe”,
 age: 34,
 email: jhon@gmail.com,
 Gender: “Male”}
+```
 -Here Gender Will be an `enum`.
 TIP:-Use The `fs` Module to Read and Write Data into JSON.
 Please try to maintain the Folder Structure.

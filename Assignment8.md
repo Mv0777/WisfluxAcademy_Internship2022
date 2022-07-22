@@ -212,7 +212,7 @@ As Express is a lightweight, minimal and flexible Node.js web application framew
 8.It is asynchronous and single-threaded.\
 9.Its robust API makes routing easy.\
 \
-__Q10.How an HTTP Communication works.__.\
+__Q10.How an HTTP Communication works?__.\
 Ans.The HTTP Communication
 When a client wants to communicate with a server, the first thing that happens, after the user types the URL in the browser address bar or goes to another page, is opening a TCP/IP connection, and the HTTP request is sent to the server. In that request, there is a message with a series of data describing what the customer has requested. The server then sends the response to the client, which also contains data that can be read. Finally, the request-response process is finalized. Keep in mind that everything here usually takes microseconds to happen.
 \

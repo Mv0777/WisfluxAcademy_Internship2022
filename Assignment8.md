@@ -7,7 +7,7 @@ Ans.Node.js is a cross-platform environment and library for running JavaScript a
 __Q2.What is V8 Engine?__.\
 Ans.V8 is an open source JavaScript engine developed by the Chromium project for the Google Chrome web browser. It is written in C++. Now a days, it is used in many projects such as Couchbase, MongoDB and Node. js.
 \
-__Q3.What is Event Loop in NodeJS.__.\
+__Q3.What is Event Loop in NodeJS?__.\
 Ans.It means as soon as Node starts its server, it simply initiates its variables, declares functions and then simply waits for event to occur. It is the one of the reason why Node. js is pretty fast compared to other similar technologies.
 \
 __Q4.What is the use of tsconfig.json file?__.\

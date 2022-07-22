@@ -1,14 +1,15 @@
 # TS-Quiz2
 ---
+\
 __Q1.What is NodeJS?__.\
 Ans.Node.js is a cross-platform environment and library for running JavaScript applications which is used to create networking and server-side applications.
-
+\
 __Q2.What is V8 Engine?__.\
 Ans.V8 is an open source JavaScript engine developed by the Chromium project for the Google Chrome web browser. It is written in C++. Now a days, it is used in many projects such as Couchbase, MongoDB and Node. js.
-
+\
 __3.What is Event Loop in NodeJS.__.\
 Ans.It means as soon as Node starts its server, it simply initiates its variables, declares functions and then simply waits for event to occur. It is the one of the reason why Node. js is pretty fast compared to other similar technologies.
-
+\
 __Q4.What is the use of tsconfig.json file?__.\
 Ans.The tsconfig. json file specifies the root files and the compiler options required to compile the project. JavaScript projects can use a jsconfig. json file instead, which acts almost the same but has some JavaScript-related compiler flags enabled by default.
 The tsconfig. json file is a file which is in JSON format. In the tsconfig. json file, we can specify various options which tell the compiler how to compile the current project.
@@ -167,10 +168,11 @@ Now open the Node.js command prompt and run the main.js
 
 node main.js  
 ```
+\
 __Q6.What is API?__.\
 Ans.API is the abbreviation of the term Application Programming Interface. It is the software responsible for the connection for the communication and information exchange between two apps. API connects two devices or programs in order to facilitate the exchange of information between them. It is the interface that serves the other parts of the software. The API specifications are the standards or documents designed to describe the creation of such connections. If a computer system meets these standards, then it is said to expose an API. The specification or implementation both are known as the API.
 
-
+\
 __Q7.What is JSON format?__.\
 Ans.
 1.JSON stands for JavaScript Object Notation. \
@@ -187,6 +189,7 @@ Ans.
 4.Internationalization \
 5.Extensibility \
 6.Interoperability \
+\
 __Q8.Why we use JSON format for API?__.\
 Ans.Since JSON is an easy-to-use, lightweight language data interchange format in comparison to other available options, it can be used for API integration. Following are the advantages of JSON: \
 
@@ -208,15 +211,17 @@ As Express is a lightweight, minimal and flexible Node.js web application framew
 7.It provides good database support. It supports RDBMS as well as NoSQL databases.\
 8.It is asynchronous and single-threaded.\
 9.Its robust API makes routing easy.\
+\
 __Q10.How an HTTP Communication works.__.\
 Ans.The HTTP Communication
 When a client wants to communicate with a server, the first thing that happens, after the user types the URL in the browser address bar or goes to another page, is opening a TCP/IP connection, and the HTTP request is sent to the server. In that request, there is a message with a series of data describing what the customer has requested. The server then sends the response to the client, which also contains data that can be read. Finally, the request-response process is finalized. Keep in mind that everything here usually takes microseconds to happen.
+\
 __Q11.What is Middleware in ExpressJS__\
 Ans.Middleware functions are the functions that access to the request and response object (req, res) in request-response cycle.\ 
 A middleware function can perform the following tasks: It can execute any code. \ It can make changes to the request and the response objects. \ 
 It can end the request-response cycle.
 
-
+\
 ## Program 
 -Create a Rest API using ExpressJS and Typescript, which has five endpoints of type:\
 -POST–Create a user and save it into a JSON file.-PUT –Update a user on the basis of its email.\

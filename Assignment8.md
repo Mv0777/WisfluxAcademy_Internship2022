@@ -84,20 +84,20 @@ callback: This is the callback function which gets two arguments (err, fd).
 Node.js Flags for Read/Write
 Following is a list of flags for read/write operation:
 
-Flag	Description
-r	open file for reading. an exception occurs if the file does not exist.
-r+	open file for reading and writing. an exception occurs if the file does not exist.
-rs	open file for reading in synchronous mode.
-rs+	open file for reading and writing, telling the os to open it synchronously. see notes for 'rs' about using this with caution.
-w	open file for writing. the file is created (if it does not exist) or truncated (if it exists).
-wx	like 'w' but fails if path exists.
-w+	open file for reading and writing. the file is created (if it does not exist) or truncated (if it exists).
-wx+	like 'w+' but fails if path exists.
-a	open file for appending. the file is created if it does not exist.
-ax	like 'a' but fails if path exists.
-a+	open file for reading and appending. the file is created if it does not exist.
-ax+	open file for reading and appending. the file is created if it does not exist.
-Create a JavaScript file named "main.js" having the following code to open a file input.txt for reading and writing.
+Flag	Description \
+r	open file for reading. an exception occurs if the file does not exist. \
+r+	open file for reading and writing. an exception occurs if the file does not exist. \
+rs	open file for reading in synchronous mode. \
+rs+	open file for reading and writing, telling the os to open it synchronously. see notes for 'rs' about using this with caution. \
+w	open file for writing. the file is created (if it does not exist) or truncated (if it exists). \
+wx	like 'w' but fails if path exists. \
+w+	open file for reading and writing. the file is created (if it does not exist) or truncated (if it exists). \
+wx+	like 'w+' but fails if path exists. \
+a	open file for appending. the file is created if it does not exist. \
+ax	like 'a' but fails if path exists. \
+a+	open file for reading and appending. the file is created if it does not exist. \
+ax+	open file for reading and appending. the file is created if it does not exist. \
+Create a JavaScript file named "main.js" having the following code to open a file input.txt for reading and writing. \
 
 
 File: main.js
@@ -118,34 +118,34 @@ Open Node.js command prompt and run the main.js:
 node main.js  
 ```
 
-Node.js file system 2
-Node.js File Information Method
-Syntax:
+Node.js file system 2 \
+Node.js File Information Method \
+Syntax: \
 
-Following is syntax of the method to get file information.
+Following is syntax of the method to get file information. \
 ```javascript
 
 fs.stat(path, callback)  
 ```
 
-Parameter explanation:
+Parameter explanation: \
 
-Path: This is string having file name including path.
+Path: This is string having file name including path. \
 
-Callback: This is the callback function which gets two arguments (err, stats) where stats is an object of fs.Stats type.
+Callback: This is the callback function which gets two arguments (err, stats) where stats is an object of fs.Stats type. \
 
-Node.js fs.Stats class Methods
-Method	Description
-stats.isfile()	returns true if file type of a simple file.
-stats.isdirectory()	returns true if file type of a directory.
-stats.isblockdevice()	returns true if file type of a block device.
-stats.ischaracterdevice()	returns true if file type of a character device.
-stats.issymboliclink()	returns true if file type of a symbolic link.
-stats.isfifo()	returns true if file type of a fifo.
-stats.issocket()	returns true if file type of asocket.
-Let's take an example to create a JavaScript file named main.js having the following code:
+Node.js fs.Stats class Methods \
+Method	Description \
+stats.isfile()	returns true if file type of a simple file. \
+stats.isdirectory()	returns true if file type of a directory. \
+stats.isblockdevice()	returns true if file type of a block device. \
+stats.ischaracterdevice()	returns true if file type of a character device. \
+stats.issymboliclink()	returns true if file type of a symbolic link. \
+stats.isfifo()	returns true if file type of a fifo. \
+stats.issocket()	returns true if file type of asocket. \
+Let's take an example to create a JavaScript file named main.js having the following code: \
 
-File: main.js
+File: main.js \
 ```javascript
 
 
@@ -173,22 +173,22 @@ Ans.API is the abbreviation of the term Application Programming Interface. It is
 
 __Q7.What is JSON format?__.\
 Ans.
-1.JSON stands for JavaScript Object Notation.
-2.JSON is an open standard data-interchange format.
-3.JSON is lightweight and self-describing.
-4.JSON originated from JavaScript.
-5.JSON is easy to read and write.
-6.JSON is language independent.
-7.JSON supports data structures such as arrays and objects.
-### Features of JSON
-1.Simplicity
-2.Openness
-3.Self-Describing
-4.Internationalization
-5.Extensibility
-6.Interoperability
+1.JSON stands for JavaScript Object Notation. \
+2.JSON is an open standard data-interchange format. \
+3.JSON is lightweight and self-describing. \
+4.JSON originated from JavaScript. \
+5.JSON is easy to read and write. \
+6.JSON is language independent. \
+7.JSON supports data structures such as arrays and objects. \
+### Features of JSON \
+1.Simplicity \
+2.Openness \
+3.Self-Describing \
+4.Internationalization \
+5.Extensibility \
+6.Interoperability \
 __Q8.Why we use JSON format for API?__.\
-Ans.Since JSON is an easy-to-use, lightweight language data interchange format in comparison to other available options, it can be used for API integration. Following are the advantages of JSON:
+Ans.Since JSON is an easy-to-use, lightweight language data interchange format in comparison to other available options, it can be used for API integration. Following are the advantages of JSON: \
 
 1.Less Verbose: In contrast to XML, JSON follows a compact style to improve its users' readability. While working with a complex system, JSON tends to make substantial enhancements. \
 2.Faster: The JSON parsing process is faster than that of the XML because the DOM manipulation library in XML requires extra memory for handling large XML files. However, JSON requires less data that ultimately results in reducing the cost and increasing the parsing speed. \
@@ -211,9 +211,9 @@ As Express is a lightweight, minimal and flexible Node.js web application framew
 __Q10.How an HTTP Communication works.__.\
 Ans.The HTTP Communication
 When a client wants to communicate with a server, the first thing that happens, after the user types the URL in the browser address bar or goes to another page, is opening a TCP/IP connection, and the HTTP request is sent to the server. In that request, there is a message with a series of data describing what the customer has requested. The server then sends the response to the client, which also contains data that can be read. Finally, the request-response process is finalized. Keep in mind that everything here usually takes microseconds to happen.
-__Q11.What is Middleware in ExpressJS__.\
-Ans.Middleware functions are the functions that access to the request and response object (req, res) in request-response cycle. 
-A middleware function can perform the following tasks: It can execute any code. It can make changes to the request and the response objects. 
+__Q11.What is Middleware in ExpressJS__\
+Ans.Middleware functions are the functions that access to the request and response object (req, res) in request-response cycle.\ 
+A middleware function can perform the following tasks: It can execute any code. \ It can make changes to the request and the response objects. \ 
 It can end the request-response cycle.
 
 

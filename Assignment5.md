@@ -288,7 +288,7 @@ __8.Using Some__ \
 It is used to check whether some array values passes a test. \
 
 	
-##PROGRAMS
+## PROGRAMS
 
 	
 1.Reverse an array? Input: [1, 2, 3, 4, 5, 6]
